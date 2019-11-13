@@ -1,0 +1,75 @@
+Linux command
+
+clear
+cd / = root of the directory
+ls = list just what in here (blue = folder)
+ls -l = show file, directory, size, modified, owner, and permission
+ls -a = show just file name "include hiddenfile .infront of it"
+ls -lh = turn to human readable
+ls -F = list all the FOLDER and add / to the directory
+ls -r = show in REVERS ORDER
+ls -R = list Sub-Directory
+ls -ltr = last modified file
+ls -IS = file size in order (Big first)
+pwd = 
+cd - = back to the last working directory
+cd -- = back to the last working direstory
+cd ../../ = 
+cd~ =
+cd Hello\ World/ = search frile 
+cd 'Hello World'
+cd B* = * mean any charactor after B
+cd *C = * mean any charactor before C
+cat = opening file and seeing content in .txt file
+cat /etc/password
+
+echo "hello everybody" = add text in .txt file
+>Test = create text file call "Test"
+(control+D) = save it
+
+cat test test1 = open 2 file at the same time
+cat -n test1 = open a file line by line
+
+cat -e test =
+cat >test5 =
+cat -T text5 =
+cat test; cat test1; cat test2 =
+cat test1>test2 = move test1 to test 2
+
+cat test6 test test1 | sort test 6 = combine allfile put it in test 6 and sort it.
+
+file* = find any file
+file ducument/* = go there
+file {:10} = find a file in this 0-10 range
+
+ipconfig = ip, MAC, Defalt, Subnet, E connect
+ipconfig | grep errors = search for error
+ipconfig | grep -A 2 flags = show 2 lines after the word "flags"
+ipconfig | grep -B 2 loop = show 2 lines before the word "loops"
+ipconfig | grep -C 2 netmask = show 2 lines up and 2 down the words "netmask"
+
+ls -al > sortfile.text = put all the file in new name sortfile.text
+cat sortfile.text = open file name "sortfile.text
+
+sort -k6 sortfile.txt = sort file by column number "6"
+
+find. = in this directory folder look here
+find. -name test =  find the file name call "test" in direstory
+
+find / -type d Pictures
+find . -type f ! -perm 777 = find a file that is not excutable 
+
+rm test = remove file "test"
+find / -size 50mb = any thing that file SIZE is bigger than 50 MP
+
+upzip file.txt = unzip file
+zip file.txt = zip file
+
+echo "this is by base 64 example | base64 = encripted 
+(control+c)
+echo "a;dkfjlsjfldk" | base64 -d = decripted 
+
+cat test4 | base64   = encripted
+echo "a;dkfjlds d" | base64 -d = decripted
+
+
